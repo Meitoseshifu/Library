@@ -15,8 +15,8 @@ services:
     image: library-app
     container_name: library_app
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: ../Dockerfile
     environment:
       DB_URL: jdbc:mysql://mysql:3306/library?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
       DB_USERNAME: root
